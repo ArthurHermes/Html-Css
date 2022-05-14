@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+<h1>Imagem flexivel</h1>
+<p>Você está vendo a imagem completa? Experimente ampliar o tamanho da <br>
+sua janela para aproveitar a melhor experiencia</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagensdesafio7/foto-p.png" type="image/png">
+    <source media="(max-width: 1150px)" srcset="imagensdesafio7/foto-m.png" type="image/png">
+    <img src="imagensdesafio7/foto-g.png" alt="imagem flexivel">
+</picture>
+
+</body>
+</html>

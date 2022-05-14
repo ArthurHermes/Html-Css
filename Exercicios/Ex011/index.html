@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo um Audio</h1>
+
+    <p>Vamos aprender a reproduzir audios em HTMl5</p>
+
+    <!--Maneira mais simples mas que pode ñ funcionar-->
+    <audio src="midia/livinhomp3.mp3" controls autoplay></audio> <!--MP3; WAV; OGG-->
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/livinhomp3.mp3" type="audio/mpeg">
+        
+        <p>Infelizmente seu computador não consegue reproduzir esse audio</p>
+        <a href="midia/livinhomp3.mp3">Clique aqui para baixar o arquico MP3</a>
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset    "UTF-8";
+
+/*cores:
+#046D00 - Verde escuro
+#680505 - Vermelho escuro
+#334D31 - Verde escuro musgo
+#CF9893 - Rosa pastel
+#F2F7F2 - Off white
+*/
+body{
+    background-image: linear-gradient(to right, #cf9893c5,#F2F7F2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #046d00
+}
+h1#Principal{
+    text-align: center;
+    color: #ff00f2;
+    background-color: gainsboro;
+    
+}
+
+.basico{
+    color: rgb(0, 0, 148);
+    font-weight: bolder;
+}
+.intermediario{
+    color: #334D31;
+}
+.avancado{
+    color: #802929d3;
+}
+.destaque{
+    background-color: #c5c56070;
+}
