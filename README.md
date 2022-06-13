@@ -1,8 +1,15 @@
 # Html-Css
- Repositorio dos exercicios do CursoemVideo
+Nome: Arthur Franco Hermes
+Idade: 17 anos
 
- Estou aprendendo a criar sites e agora vou gerenciar meus repositorios
+Neste repositorio salvo todos os meus estudos, para alem de telos guardado em uma nuvem por segurança, tambem posso divulgar o meu trabalho
 
-<a href="hhtps://ArthurHermes.github.io/Html-Css/Exercicios/Ex001/index.html"> Executar o exercicio 001 </a>
+Estou estudando:
+Html
+Css
 
-<a href="https://ArthurHermes.github.io/Html-Css/Exercicios/Ex009" target="_blank">Executar exercicio 09</a>
+Pretendo estudar:
+Python
+Wordpress e/ou Php
+Sql
+Hacking(Apenas para diversão,pelo menos no começo)
