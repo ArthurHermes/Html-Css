@@ -1,0 +1,100 @@
+@charset    "Utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/*font-family: 'Passion One', cursive;
+font-family: 'Sriracha', cursive;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root{
+    --font1: Verdana, Tahoma, sans-serif;/*Fonte */
+    --font2: 'Passion One', cursive;/*Fonte de Titulo*/
+    --font3: 'Sriracha', cursive;/*Fonte padrão*/
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: var(--font3), var(--font1);
+}
+header{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-family: var(--font2),var(--font1);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header > p{
+    font-family: var(--font1);
+    padding-bottom: 50px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a::after, footer a:hover{
+    text-decoration: underline;
+}
+section.normal{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+section.imagem{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
+    background-size: cover;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.575);
+    text-shadow: 1px 1px 0px black;
+}
+section#img001{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+section#img002{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+footer{
+    font-family: var(--font1);
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
