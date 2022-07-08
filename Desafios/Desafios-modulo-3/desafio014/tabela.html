@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scales=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .pintado{
+            color: white;
+            background-color: rgb(87, 87, 87);
+        }
+    </style>
+</head>
+<body>
+      <table>
+        <thead>
+            <th scope="colgroup" class="pintado">Área</th>
+            <th scope="colgroup" class="pintado">Disciplina</th>
+            <th scope="colgroup" class="pintado">Notas</th>
+            <th scope="colgroup" class="pintado">Média</th>
+        </thead>
+        <tbody>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matematica</td>
+            <td>0.0  0.0</td>
+            <td>0.0</td>
+            <tr>
+                <td>Fisica</td>
+                <td>0.0 0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0.0 0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0 0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="pintado">
+                <th colspan="3" scope="row">Media de Exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>0.0 0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0 0.0</td>
+                <td> 0.0</td>
+            </tr>
+            <tr class="pintado">
+                <th scope="row" colspan="3">Media de Humanas</th>
+                <td> 0.0</td>
+            </tr>
+        </tbody>
+      </table>  
+</body>
+</html>
