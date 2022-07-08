@@ -10,6 +10,7 @@ Css
 
 Pretendo estudar:
 Python
+Javascript
 Wordpress e/ou Php
 Sql
 Hacking(Apenas para diversão,pelo menos no começo)
