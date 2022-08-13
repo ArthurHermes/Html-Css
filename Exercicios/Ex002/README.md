@@ -1,0 +1,1 @@
+Exercicio para a criação de sites com simbolos,emojis e parargrafos

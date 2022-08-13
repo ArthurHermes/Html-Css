@@ -1,0 +1,1 @@
+Exercicico para mostrar como funcionava no HTML4
