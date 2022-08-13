@@ -1,0 +1,1 @@
+Exercicio para a criação de Pesudo-classes e Pesudo-elementos
