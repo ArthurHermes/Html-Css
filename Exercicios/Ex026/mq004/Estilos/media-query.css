@@ -2,6 +2,72 @@
 
 /*Outras midias*/
 
-@media print {
-    
+/*Tipical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acimade 1200px
+-----------------------------
+*/
+
+@media print {/*Impressão*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        /*background-image: url(../imagens/back-print.jpg);Desnecessario (N Funciona)*/
+
+    }
+    main{
+        border: 2px solid black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita atraves do site www.github.com/ArthurHermes';
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#phone{ display: none; }
+    img#tablet{ display: none; }
+    img#print{ display: block; }
+    img#PC{ display: none; }
+    img#TV{ display: none; }
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) { /*Tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{ display: none; }
+    img#tablet{ display: block; }
+    img#print{ display: none; }
+    img#PC{ display: none; }
+    img#TV{ display: none; }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {/*PC*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{ display: none; }
+    img#tablet{ display: none; }
+    img#print{ display: none; }
+    img#PC{ display: block; }
+    img#TV{ display: none; }
+}
+@media screen and (min-width:1200px) {/*Grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{ display: none; }
+    img#tablet{ display: none; }
+    img#print{ display: none; }
+    img#PC{ display: none; }
+    img#TV{ display: block; }
+
+    main{
+        width: 700px;
+    }
 }
