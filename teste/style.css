@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgb(76, 0, 255), rgb(43, 1, 77));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Animação do botão */
+.animado-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.animado-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.animado-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.animado-btn:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.animado-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Animações chaveadas */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
