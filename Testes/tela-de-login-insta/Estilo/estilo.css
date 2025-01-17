@@ -1,0 +1,21 @@
+@charset    "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#quadrado{
+    width: 348px;
+    height: 379px;
+    border: 1px solid black;
+}
+
+input{
+    text-align: center;
+    display: block;
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    align-items: center;
+}
